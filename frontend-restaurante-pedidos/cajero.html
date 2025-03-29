@@ -15,9 +15,9 @@
 <div class="w3-top w3-hide-small">
   <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
     <a href="#" class="w3-bar-item w3-button">HOME</a>
-    <a href="index.html" class="w3-bar-item w3-button"><img src="imagenes/pedidos.png" width="30"> VER PEDIDOS</a>
-    <a href="login.html" class="w3-bar-item w3-button"><img src="imagenes/chef.png" width="30"> SESION CHEF</a>
-    <a href="login.html" class="w3-bar-item w3-button"><img src="imagenes/mesero.png" width="30"> SESION MESERO</a> 
+    <a href="pedidos.html" class="w3-bar-item w3-button"><img src="imagenes/pedidos.png" width="30"> VER PEDIDOS</a>
+    <a href="chef.html" class="w3-bar-item w3-button"><img src="imagenes/chef.png" width="30"> SESION CHEF</a>
+    <a href="mesero.html" class="w3-bar-item w3-button"><img src="imagenes/mesero.png" width="30"> SESION MESERO</a> 
     <a href="index.html"  class="me-5 mt-1 fs-4 btn btn-danger float-end w3-bar-item w3-button">SALIR</a>
     <a href="#" class="me-5 mt-1 fs-4 float-end w3-bar-item w3-button">
         <img src="imagenes/cajero.png" width="30">CAJERO:<span class="fw-bold">User</span>
@@ -61,10 +61,12 @@
                   </select>
                 </p>
               
-              <p><input class="cliente w3-input w3-padding-16 w3-border" type="text" placeholder="Cliente" required name="NameCliente"></p>
-              <p><input class="cantidad w3-input w3-padding-16 w3-border" type="number" placeholder="Cantidad" required name="People"></p>
-              <p><input class="fecha w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2025-11-16T20:00"></p>
-              <p><input class="observaciones w3-input w3-padding-16 w3-border" type="text" placeholder="Observaciones" required name="Observaciones"></p>
+              <p><input  id="pizza_cliente" class="cliente w3-input w3-padding-16 w3-border" type="text" placeholder="Cliente" required name="NameCliente"></p>
+              <p><input  id="pizza_cantidad" class="cantidad w3-input w3-padding-16 w3-border" type="number" placeholder="Cantidad" required name="People"></p>
+              <p><input id="pizza_fecha" class="fecha w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2025-11-16T20:00"></p>
+              <p><input  id="observaciones"class="observaciones w3-input w3-padding-16 w3-border" type="text" placeholder="Observaciones" required name="Observaciones"></p>
+              <p><input id="precio" class="w3-input w3-padding-16 w3-border" type="number" placeholder="Precio" required></p>
+              <p><input id="mesa" class="w3-input w3-padding-16 w3-border" type="number" placeholder="Mesa" required></p>
               
               <p><button class="btn-pedido w3-button w3-blue w3-hover-red w3-block" type="button">PEDIR</button></p>
               </form>
@@ -90,10 +92,14 @@
                     <option value="Seafood pasta">Seafood pasta</option>
                 </select>
                 </p>
-                <p><input class="cliente w3-input w3-padding-16 w3-border" type="text" placeholder="Cliente" required name="NameCliente"></p>
-                <p><input class="cantidad w3-input w3-padding-16 w3-border" type="number" placeholder="Cantidad" required name="People"></p>
-                <p><input class="fecha w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2025-11-16T20:00"></p>
-                <p><input class="observaciones w3-input w3-padding-16 w3-border" type="text" placeholder="Observaciones" required name="Observaciones"></p>
+           
+
+                <p><input  id="pasta_cliente" class="cliente w3-input w3-padding-16 w3-border" type="text" placeholder="Cliente" required name="NameCliente"></p>
+                <p><input  id="pasta_cantidad" class="cantidad w3-input w3-padding-16 w3-border" type="number" placeholder="Cantidad" required name="People"></p>
+                <p><input id="pasta_fecha" class="fecha w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2025-11-16T20:00"></p>
+                <p><input  id="observaciones"class="observaciones w3-input w3-padding-16 w3-border" type="text" placeholder="Observaciones" required name="Observaciones"></p>
+                <p><input id="precio" class="w3-input w3-padding-16 w3-border" type="number" placeholder="Precio" required></p>
+                <p><input id="mesa" class="w3-input w3-padding-16 w3-border" type="number" placeholder="Mesa" required></p>
                 
                 <p><button class="btn-pedido w3-button w3-blue w3-hover-red w3-block" type="button">PEDIR</button></p>
               </form>
@@ -117,10 +123,13 @@
                   <option value="Tomozzarella">Tomozzarella</option>
               </select>
               </p>
-              <p><input class="cliente w3-input w3-padding-16 w3-border" type="text" placeholder="Cliente" required name="NameCliente"></p>
-              <p><input class="cantidad w3-input w3-padding-16 w3-border" type="number" placeholder="Cantidad" required name="People"></p>
-              <p><input class="fecha w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2025-11-16T20:00"></p>
-              <p><input class="observaciones w3-input w3-padding-16 w3-border" type="text" placeholder="Observaciones" required name="Observaciones"></p>
+              <p><input  id="starter_cliente" class="cliente w3-input w3-padding-16 w3-border" type="text" placeholder="Cliente" required name="NameCliente"></p>
+              <p><input  id="starter_cantidad" class="cantidad w3-input w3-padding-16 w3-border" type="number" placeholder="Cantidad" required name="People"></p>
+              <p><input id="starter_fecha" class="fecha w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2025-11-16T20:00"></p>
+              <p><input  id="observaciones"class="observaciones w3-input w3-padding-16 w3-border" type="text" placeholder="Observaciones" required name="Observaciones"></p>
+              <p><input id="precio" class="w3-input w3-padding-16 w3-border" type="number" placeholder="Precio" required></p>
+              <p><input id="mesa" class="w3-input w3-padding-16 w3-border" type="number" placeholder="Mesa" required></p>
+              
               
               <p><button class="btn-pedido w3-button w3-blue w3-hover-red w3-block" type="button">PEDIR</button></p>
             </form>
@@ -146,9 +155,10 @@ function openMenu(evt, menuName) {
      x[i].style.display = "none";
   }
   tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < x.length; i++) {
-     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
-  }
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+}
+
   document.getElementById(menuName).style.display = "block";
   evt.currentTarget.firstElementChild.className += " w3-red";
 }
@@ -169,23 +179,23 @@ switch (tipoPizza) {
         break;
     case "Chicken":
         precio.innerHTML = "$17.000";
-        precio.value = "$12.500";
+        precio.value = "$17.000";
         break;
     case "Pineapple'o'clock":
         precio.innerHTML = "$16.500";
-        precio.value = "$12.500";
+        precio.value = "$16.500";
         break;
     case "Meat Town":
         precio.innerHTML = "$20.000";
-        precio.value = "$12.500";
+        precio.value = "$20.000";
         break;
     case "Parma":
         precio.innerHTML = "$21.500";
-        precio.value = "$12.500";
+        precio.value = "$21.500";
         break;
     default:
         precio.innerHTML = "$15.500";
-        precio.value = "$12.500";
+        precio.value = "$15.500";
 }
 }
 
@@ -331,6 +341,6 @@ actualizarIngredientesPizza();
     }
 
 </script>
-<script src="crearPedidos.js"></script>
+<script src="./js/crearPedidos.js"></script>
 </body>
 </html>
