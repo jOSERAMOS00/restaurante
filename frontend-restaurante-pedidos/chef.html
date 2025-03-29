@@ -15,7 +15,7 @@
    <div class="w3-top w3-hide-small">
     <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
       <a href="#" class="w3-bar-item w3-button">HOME</a>
-      <a href="login.html" class="w3-bar-item w3-button"><img src="imagenes/mesero.png" width="30"> VER SESION MESERO</a> 
+      <a href="mesero.html" class="w3-bar-item w3-button"><img src="imagenes/mesero.png" width="30"> VER SESION MESERO</a> 
       <a href="index.html"  class="me-5 mt-1 fs-4 btn btn-danger float-end w3-bar-item">SALIR</a>
       <a href="#" class="me-5 mt-1 fs-4 float-end w3-bar-item w3-button">
         <img src="imagenes/chef.png" width="30"> CHEF:<span class="fw-bold">User</span>
@@ -24,7 +24,7 @@
   </div>
     
   <!-- Menu Container -->
-  <div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-container w3-black w3-padding-64" id="contenedor">
     <div class="w3-content">
       <h1 class="w3-center w3-jumbo" style="margin-bottom:64px"><img src="imagenes/preparar.png" width="80"> PEDIDOS CHEF</h1>
       <div class="container">
@@ -39,12 +39,15 @@
               <table class="table">
                 <thead>
                   <tr>
+                    <th>N</th>
                     <th>Platillo</th>
-                    <th>Mesa</th>
-                    <th>Cambiar Estado</th>
+                    <th>Cantidad</th>
+                    <th>Cliente</th>
+                    <th>Observaciones</th>
+                    <th>Acción</th>
                   </tr>
                 </thead>
-                <tbody>
+                <tbody id="Preparar">
                   <!-- aqui va el listado --> 
                   <!-- aqui va el listado -->
                 </tbody>
@@ -61,12 +64,15 @@
               <table class="table">
                 <thead>
                   <tr>
+                    <th>N</th>
                     <th>Platillo</th>
-                    <th>Mesa</th>
-                    <th>Cambiar Estado</th>
+                    <th>Cantidad</th>
+                    <th>Cliente</th>
+                    <th>Observaciones</th>
+                    <th>Acción</th>
                   </tr>
                 </thead>
-                <tbody>
+                <tbody id="Preparando">
                   <!-- aqui va el listado -->
                   <!-- aqui va el listado -->
                 </tbody>
@@ -83,7 +89,7 @@
 <footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
     <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
   </footer>
-  
+  <script src="js/chef.js"></script>
   <script>
   // Tabbed Menu
   function openMenu(evt, menuName) {
@@ -99,8 +105,11 @@
     document.getElementById(menuName).style.display = "block";
     evt.currentTarget.firstElementChild.className += " w3-red";
   }
+
+  init();
  // document.getElementById("myLink").click();
   </script>
-
+  <script src="js/chef.js"></script>
   </body>
+  
   </html>
